@@ -25,12 +25,35 @@ const signature = Great_Vibes({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mahbubalamrazu-ivory.vercel.app'),
   title: 'Mahbub Alam Razu',
   description: 'The official digital identity of Mahbub Alam Razu — entrepreneur, business leader, and CEO of Circle Network.',
   icons: {
     icon: '/profile.ico',
     shortcut: '/profile.ico',
-    apple: '/profile.ico',
+    apple: '/profile.webp',
+  },
+  openGraph: {
+    title: 'Mahbub Alam Razu',
+    description: 'The official digital identity of Mahbub Alam Razu — entrepreneur, business leader, and CEO of Circle Network.',
+    url: 'https://mahbubalamrazu-ivory.vercel.app',
+    siteName: 'Mahbub Alam Razu',
+    images: [
+      {
+        url: '/profile.webp',
+        width: 1150,
+        height: 1310,
+        alt: 'Mahbub Alam Razu',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Mahbub Alam Razu',
+    description: 'The official digital identity of Mahbub Alam Razu — entrepreneur, business leader, and CEO of Circle Network.',
+    images: ['/profile.webp'],
   },
 }
 

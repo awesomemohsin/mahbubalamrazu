@@ -34,6 +34,7 @@ const companies = [
     industry: 'International Internet Gateway (IIG)',
     description: 'Licensed International Internet Gateway (IIG) providing high-capacity bandwidth, data transmission, and corporate network connectivity.',
     logo: '/companies/Windstream Communications Limited.webp',
+    link: 'https://www.windstreamcommunication.net/',
     featured: false,
   },
   {
@@ -55,6 +56,7 @@ const companies = [
     industry: 'Packaged Food & Snacks',
     description: 'Supplying popular, trusted biscuits, snacks, and everyday food items to retail shops all over Bangladesh.',
     logo: '/companies/Parle Bangladesh.webp',
+    link: 'https://parlebangladesh.com/',
     featured: false,
   },
   {
@@ -62,6 +64,7 @@ const companies = [
     industry: 'Home & Office Interiors',
     description: 'Designing and building beautiful, modern, and comfortable spaces for homes and corporate workplaces.',
     logo: '/companies/Universe Interiors Ltd.webp',
+    link: 'https://universeinteriors.com/',
     featured: false,
   },
   {
@@ -385,7 +388,7 @@ export default function Page() {
                       textDecoration: 'none',
                     }}
                   >
-                    Visit circlenetworkbd.net <ExternalLink size={13} />
+                    Visit {company.link.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')} <ExternalLink size={13} />
                   </a>
                 )}
               </div>
